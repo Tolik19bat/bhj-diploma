@@ -1,0 +1,10 @@
+{
+  "editor.fontFamily": "Anonymous Pro Regular",
+  "editor.wordWrap": "bounded",
+  "editor.accessibilityPageSize": 1,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
+  "editor.codeLensFontFamily": "",
+  "editor.codeLensFontSize": 1,
+  "editor.cursorSmoothCaretAnimation": "on"
+}
