@@ -26,18 +26,18 @@ const createRequest = (options = {}) => {
     }
   }
   catch (error) {//если ошибка
-      console.error('Ошибка, если есть', error);//выкидываем в консоль ошибку
-    }
+    console.error('Ошибка, если есть', error);//выкидываем в консоль ошибку
+  }
 
-    xhr.onload = function () {//слушаем
-      //код сработает после того, как мы получим ответ сервера
-      if (xhr.status != 200) {// анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
-        console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`);
-      } else {// если всё прошло гладко, выводим результат
-        console.log(xhr.response); // response -- это ответ сервера
-      }
+  xhr.onload = function () {//слушаем
+    //код сработает после того, как мы получим ответ сервера
+    if (xhr.status != 200) {// анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
+      console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`);
+    } else {// если всё прошло гладко, выводим результат
+      console.log(xhr.response); // response -- это ответ сервера
     }
   }
+}
 
 
 //входные данные
